@@ -49,6 +49,7 @@ public class Game {
             }
         }
         if (theWinner==null) {
+            // Output, due to Mockito being tricky to set up 1 level deep within Game
             System.out.println("Draw with a score of " + theScore);
         } else {
             System.out.println("Winner is " + theWinner.getName() + " with a score of " + theScore);
